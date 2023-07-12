@@ -5,5 +5,10 @@ console.log(randomLetter);
 document.addEventListener('keydown', function(event) {
     if (randomLetter === event.key) {
         randomLetter = letters[Math.floor(Math.random() * 26)];
+        let li = document.createElement('li');
+        li.textContent = "SECRET KEY PRESSED"
+        ol.appendChild(li);
+        console.log(randomLetter);
     }
 })
+const ol = document.querySelector('ol');
