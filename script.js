@@ -2,7 +2,7 @@ const letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p'
 let randomLetter = letters[Math.floor(Math.random() * 26)];
 console.log(randomLetter);
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keyup', function(event) {
     if (randomLetter === event.key) {
         randomLetter = letters[Math.floor(Math.random() * 26)];
         let li = document.createElement('li');
