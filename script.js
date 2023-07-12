@@ -3,5 +3,7 @@ let randomLetter = letters[Math.floor(Math.random() * 26)];
 console.log(randomLetter);
 
 document.addEventListener('keydown', function(event) {
-
+    if (randomLetter === event.key) {
+        randomLetter = letters[Math.floor(Math.random() * 26)];
+    }
 })
